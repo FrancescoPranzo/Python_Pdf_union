@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog
 import random
 
-
+#improve the user interface. Working and studying...
 window = tk.Tk()
 #print(help(tk.Tk))
 window.geometry("600x300")
