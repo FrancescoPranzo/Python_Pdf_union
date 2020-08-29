@@ -52,7 +52,15 @@ Button1.grid(row=r, column=c)
 
 Button2 = tk.Button(text="Generate a file", borderwidth=2, command=generate_file_pdf)
 Button2.grid(row=2, column=2)
-
+Button2 = tk.Button(text="Generate a file", borderwidth=2, command=generate_file_pdf)
+Button2.grid(row=2, column=1)
+label= tk.Label()
+label.grid(row=4, column=1)
+#add the funciton to extract a page from a certain file
+first = tk.Entry()
+first.grid(row=5, column=1)
+Button_extract = tk.Button(text="extract a page")
+Button_extract.grid(row=5, column=2)
 
 
 if  __name__ == "__main__":
