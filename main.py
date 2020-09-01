@@ -61,7 +61,7 @@ first = tk.Entry()
 first.grid(row=5, column=1)
 Button_extract = tk.Button(text="extract a page")
 Button_extract.grid(row=5, column=2)
-
+#Read the values from the entry...
 
 if  __name__ == "__main__":
     window.mainloop()
