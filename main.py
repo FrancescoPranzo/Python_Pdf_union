@@ -65,7 +65,7 @@ label.grid(row=4, column=1)
 #add the funciton to extract a page from a certain file
 first = tk.Entry()
 first.grid(row=5, column=1)
-Button_extract = tk.Button(text="extract a page")
+Button_extract = tk.Button(text="extract a page", command=get_value_from_entry)
 Button_extract.grid(row=5, column=2)
 #Read the values from the entry...
 
