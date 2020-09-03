@@ -10,6 +10,8 @@ window.geometry("600x300")
 window.title("PDF tool")
 
 #function to extract a page
+#for now it only extract the values from the entry
+
 r=1
 c=1
 #print(type(r))
