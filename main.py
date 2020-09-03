@@ -11,7 +11,10 @@ window.title("PDF tool")
 
 #function to extract a page
 #for now it only extract the values from the entry
-
+def get_value_from_entry():
+    value = int(first.get())
+    print(value)
+#work in progress above
 r=1
 c=1
 #print(type(r))
