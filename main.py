@@ -9,6 +9,7 @@ window = tk.Tk()
 window.geometry("600x300")
 window.title("PDF tool")
 
+#function to extract a page
 r=1
 c=1
 #print(type(r))
