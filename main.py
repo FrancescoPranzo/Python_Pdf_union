@@ -14,6 +14,7 @@ window.title("PDF tool")
 def get_value_from_entry():
     value = int(first.get())
     print(value)
+    #get the page and extract it
 #work in progress above
 r=1
 c=1
