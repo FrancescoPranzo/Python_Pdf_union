@@ -9,13 +9,7 @@ window = tk.Tk()
 window.geometry("600x300")
 window.title("PDF tool")
 
-#function to extract a page
-#for now it only extract the values from the entry
-def get_value_from_entry():
-    value = int(first.get())
-    print(value)
-    #get the page and extract it
-#work in progress above
+
 r=1
 c=1
 #print(type(r))
@@ -53,6 +47,21 @@ def generate_file_pdf():
                 writer.write(file_merged)
 
     list_file_name = [ ]
+#function that esxtract a page from the file
+def get_value_from_entry():
+    global list_file_name
+    value = int(first.get())
+    print(value)
+    with open(list_file_name[0], "rb") as file_to_extract:
+        reader = PyPDF2.PdfFileReader(file_to_extract, strict=False)
+        page = reader.getPage(value)
+        print(value)
+        name_file_with_extracted_page = "file_extracted"+str(random.randint(1,70))+".pdf"
+        with open(name_file_with_extracted_page, "wb") as file_extract_to:
+            writer = PyPDF2.PdfFileWriter()
+            writer.addPage(page)
+            writer.write(file_extract_to)
+    
 #aggiungere il parametro command
 Button1 = tk.Button(text="Choose the files", command=file_choose)
 Button1.grid(row=r, column=c)
