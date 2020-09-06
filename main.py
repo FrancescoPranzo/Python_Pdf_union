@@ -79,5 +79,10 @@ Button_extract = tk.Button(text="extract a page", command=get_value_from_entry)
 Button_extract.grid(row=5, column=2)
 #Read the values from the entry...
 
+#improvement for the gui
+    #show the file choosed
+    #notice that the file has been created
+    
+
 if  __name__ == "__main__":
     window.mainloop()
