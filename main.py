@@ -45,7 +45,7 @@ def generate_file_pdf():
                     page = reader.getPage(i)
                     writer.addPage(page)
                 writer.write(file_merged)
-
+    # CHOOSE WHERE SAVE THE FILE
     list_file_name = [ ]
 #function that esxtract a page from the file
 def get_value_from_entry():
