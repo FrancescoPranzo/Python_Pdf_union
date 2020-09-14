@@ -9,6 +9,12 @@ window = tk.Tk()
 window.geometry("600x300")
 window.title("PDF tool")
 
+#function used to get a page from a PDF
+def get_page_from_a_PDF(name_pdf_file):
+    with open(name_pdf_file, "wb") as file:
+        reader = PyPDF2.PdfFileReader(file)
+        pages = reader.getNumPages()
+        return pages
 
 
 #print(type(r))
