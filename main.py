@@ -10,8 +10,7 @@ window.geometry("600x300")
 window.title("PDF tool")
 
 
-r=1
-c=1
+
 #print(type(r))
 #lista = [ ]
 list_file_name = [ ]
@@ -64,7 +63,7 @@ def get_value_from_entry():
     
 #aggiungere il parametro command
 Button1 = tk.Button(text="Choose the files", command=file_choose)
-Button1.grid(row=r, column=c)
+Button1.grid(row=1, column=1)
 
 Button2 = tk.Button(text="Generate a file", borderwidth=2, command=generate_file_pdf)
 Button2.grid(row=2, column=2)
