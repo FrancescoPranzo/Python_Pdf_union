@@ -15,6 +15,10 @@ def get_page_from_a_PDF(name_pdf_file):
         reader = PyPDF2.PdfFileReader(file)
         pages = reader.getNumPages()
         return pages
+#function that create a label dynamically
+def create_label(label_name, text_for_the_label, row_label, column_label):
+    label_name = tk.Label(text=text_for_the_label)
+    label_name.grid(row=row_label, column=column_label)
 
 
 #print(type(r))
